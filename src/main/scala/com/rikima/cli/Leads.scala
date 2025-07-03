@@ -2,18 +2,17 @@ package com.rikima.cli
 
 import com.spotify.scio._
 
-//case class Record(c1: Int, c2: String)
-
 object Leads {
   def main(cmdlineArgs: Array[String]): Unit = {
     val (sc, args) = ContextAndArgs(Array(
       //"--runner=DirectRunner",
       "--runner=DataflowRunner",
       "--region=asia-northeast2",
-      "--zone=asia-northeast2-a",
-      "--numWorkers=5",
-      "--maxNumberWorkers=10",
-      "--directRunnerParallelism=5",
+      // "--zone=asia-northeast1-a",
+      "--numWorkers=10",
+      "--maxNumberWorkers=20",
+      "--directRunnerParallelism=20",
+      "--worker-machine-type=e2-standard-2",
       //"--output=./wc"
     )
     )
@@ -29,8 +28,8 @@ object Leads {
       //.filter(row => row.split(",")(1).matches("\\d+"))
       .map { row =>
         val csv = row.split(",")
-        val c1 = csv(0)
-        val c2 = csv(1)
+        val c1 = csv(2)
+        val c2 = csv(3)
         (c1, c2)
       }
       .map { t =>
