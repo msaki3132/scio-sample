@@ -8,7 +8,7 @@ object WordCount {
 
     val exampleData = "gs://dataflow-samples/shakespeare/kinglear.txt"
     val input = args.getOrElse("input", exampleData)
-    val output = args.getOrElse("output", "gs://rikitoku-sandbox/wc")
+    val output = args.getOrElse("output", "./output") //"gs://rikitoku-sandbox/wc")
 
 
     sc.textFile(input)
