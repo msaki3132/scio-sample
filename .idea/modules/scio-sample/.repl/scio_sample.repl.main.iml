@@ -23,16 +23,17 @@
     </orderEntry>
     <orderEntry type="module" module-name="scio_sample.main" />
     <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.13.16:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.spotify:scio-repl_2.13:0.14.17:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.spotify:scio-core_2.13:0.14.17:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.spotify:scio-jdbc_2.13:0.14.17:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.spotify:scio-parquet_2.13:0.14.17:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.spotify:scio-google-cloud-platform_2.13:0.14.17:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.spotify:scio-repl_2.13:0.14.18:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.spotify:scio-core_2.13:0.14.18:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.spotify:scio-jdbc_2.13:0.14.18:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.spotify:scio-parquet_2.13:0.14.18:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.spotify:scio-google-cloud-platform_2.13:0.14.18:jar" level="project" />
     <orderEntry type="library" name="sbt: org.slf4j:slf4j-api:2.0.16:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.beam:beam-runners-direct-java:2.66.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.beam:beam-sdks-java-io-google-cloud-platform:2.66.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.beam:beam-runners-google-cloud-dataflow-java:2.66.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang:scala-compiler:2.13.16:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.spotify:scio-extra_2.13:0.14.17:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.spotify:scio-extra_2.13:0.14.18:jar" level="project" />
     <orderEntry type="library" name="sbt: com.chuusai:shapeless_2.13:2.3.13:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-collection-compat_2.13:2.13.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang:scala-reflect:2.13.16:jar" level="project" />
@@ -42,9 +43,8 @@
     <orderEntry type="library" name="sbt: org.apache.avro:avro:1.11.4:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.beam:beam-sdks-java-core:2.66.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.beam:beam-sdks-java-extensions-google-cloud-platform-core:2.66.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.apache.beam:beam-runners-direct-java:2.66.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.slf4j:slf4j-simple:1.7.30:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.spotify:scio-macros_2.13:0.14.17:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.spotify:scio-macros_2.13:0.14.18:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.protobuf:protobuf-java:4.29.4:jar" level="project" />
     <orderEntry type="library" name="sbt: com.esotericsoftware:kryo-shaded:4.0.3:jar" level="project" />
     <orderEntry type="library" name="sbt: com.fasterxml.jackson.core:jackson-annotations:2.15.4:jar" level="project" />
@@ -90,8 +90,8 @@
     <orderEntry type="library" name="sbt: org.apache.parquet:parquet-hadoop:1.15.2:jar" level="project" />
     <orderEntry type="library" name="sbt: org.slf4j:log4j-over-slf4j:1.7.30:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.hadoop:hadoop-client:3.4.1:jar" level="project" />
-    <orderEntry type="library" name="sbt: io.dropwizard.metrics:metrics-core:4.2.30:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.spotify:scio-avro_2.13:0.14.17:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.dropwizard.metrics:metrics-core:4.2.32:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.spotify:scio-avro_2.13:0.14.18:jar" level="project" />
     <orderEntry type="library" name="sbt: com.fasterxml.jackson.datatype:jackson-datatype-joda:2.15.4:jar" level="project" />
     <orderEntry type="library" name="sbt: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.4:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.api:gax-grpc:2.65.0:jar" level="project" />
@@ -114,8 +114,10 @@
     <orderEntry type="library" name="sbt: io.grpc:grpc-netty:1.70.0:jar" level="project" />
     <orderEntry type="library" name="sbt: io.grpc:grpc-stub:1.70.0:jar" level="project" />
     <orderEntry type="library" name="sbt: io.netty:netty-handler:4.1.100.Final:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.checkerframework:checker-qual:3.49.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.mysql:mysql-connector-j:8.0.33:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.beam:beam-model-pipeline:2.66.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.beam:beam-vendor-grpc-1_69_0:0.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.checkerframework:checker-qual:3.49.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.beam:beam-runners-core-java:2.66.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.beam:beam-sdks-java-harness:2.66.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.beam:beam-sdks-java-expansion-service:2.66.0:jar" level="project" />
@@ -156,11 +158,9 @@
     <orderEntry type="library" name="sbt: com.google.api.grpc:proto-google-cloud-spanner-v1:6.93.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.api.grpc:proto-google-common-protos:2.56.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.protobuf:protobuf-java-util:4.29.4:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.apache.beam:beam-vendor-grpc-1_69_0:0.1:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.arrow:arrow-memory-core:15.0.2:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.arrow:arrow-vector:15.0.2:jar" level="project" />
     <orderEntry type="library" name="sbt: org.threeten:threetenbp:1.7.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.mysql:mysql-connector-j:8.0.33:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.apis:google-api-services-dataflow:v1b3-rev20250519-2.0.0:jar" level="project" />
     <orderEntry type="library" name="sbt: io.github.java-diff-utils:java-diff-utils:4.15:jar" level="project" />
     <orderEntry type="library" name="sbt: org.jline:jline:3.27.1:jdk8:jar" level="project" />
@@ -168,9 +168,9 @@
     <orderEntry type="library" name="sbt: com.spotify:annoy:0.2.6:jar" level="project" />
     <orderEntry type="library" name="sbt: com.spotify:voyager:2.1.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.spotify.sparkey:sparkey:3.2.5:jar" level="project" />
-    <orderEntry type="library" name="sbt: io.circe:circe-core_2.13:0.14.13:jar" level="project" />
-    <orderEntry type="library" name="sbt: io.circe:circe-generic_2.13:0.14.13:jar" level="project" />
-    <orderEntry type="library" name="sbt: io.circe:circe-parser_2.13:0.14.13:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.circe:circe-core_2.13:0.14.14:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.circe:circe-generic_2.13:0.14.14:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.circe:circe-parser_2.13:0.14.14:jar" level="project" />
     <orderEntry type="library" name="sbt: net.java.dev.jna:jna:5.17.0:jar" level="project" />
     <orderEntry type="library" name="sbt: net.pishen:annoy4s_2.13:0.10.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.beam:beam-sdks-java-extensions-sketching:2.66.0:jar" level="project" />
@@ -335,9 +335,9 @@
     <orderEntry type="library" name="sbt: org.eclipse.collections:eclipse-collections:11.1.0:jar" level="project" />
     <orderEntry type="library" name="sbt: it.unimi.dsi:fastutil:8.2.2:jar" level="project" />
     <orderEntry type="library" name="sbt: com.fasterxml.util:java-merge-sort:1.1.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: io.circe:circe-numbers_2.13:0.14.13:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.circe:circe-numbers_2.13:0.14.14:jar" level="project" />
     <orderEntry type="library" name="sbt: org.typelevel:cats-core_2.13:2.13.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: io.circe:circe-jawn_2.13:0.14.13:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.circe:circe-jawn_2.13:0.14.14:jar" level="project" />
     <orderEntry type="library" name="sbt: com.github.pathikrit:better-files_2.13:3.8.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.clearspring.analytics:stream:2.9.5:jar" level="project" />
     <orderEntry type="library" name="sbt: com.tdunning:t-digest:3.2:jar" level="project" />
