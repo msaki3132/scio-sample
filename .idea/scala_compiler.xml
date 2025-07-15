@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <option name="separateProdTestSources" value="true" />
+    <profile name="sbt 1" modules="scio-sample_701,scio-sample_701.main,scio-sample_701.test,scio_sample,scio_sample.repl" />
+    <profile name="sbt 2" modules="scio_sample.main,scio_sample.repl.main,scio_sample.repl.test,scio_sample.test">
+      <option name="deprecationWarnings" value="true" />
+      <option name="uncheckedWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <parameters>
+        <parameter value="-release" />
+        <parameter value="8" />
+        <parameter value="-Ymacro-annotations" />
+      </parameters>
+    </profile>
+  </component>
+</project>

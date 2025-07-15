@@ -73,7 +73,7 @@ lazy val root: Project = project
 
       "mysql" % "mysql-connector-java" % "8.0.33",
 
-      "org.apache.beam" % "beam-runners-direct-java" % beamVersion % Test,
+      "org.apache.beam" % "beam-runners-direct-java" % beamVersion,
       "org.apache.beam" % "beam-sdks-java-io-google-cloud-platform" % beamVersion,
       "org.apache.beam" % "beam-runners-google-cloud-dataflow-java" % beamVersion,
     ),

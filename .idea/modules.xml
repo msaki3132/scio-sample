@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scio-sample/scio_sample.iml" filepath="$PROJECT_DIR$/.idea/modules/scio-sample/scio_sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scio-sample/scio_sample.main.iml" filepath="$PROJECT_DIR$/.idea/modules/scio-sample/scio_sample.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scio-sample/.repl/scio_sample.repl.iml" filepath="$PROJECT_DIR$/.idea/modules/scio-sample/.repl/scio_sample.repl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scio-sample/.repl/scio_sample.repl.main.iml" filepath="$PROJECT_DIR$/.idea/modules/scio-sample/.repl/scio_sample.repl.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scio-sample/.repl/scio_sample.repl.test.iml" filepath="$PROJECT_DIR$/.idea/modules/scio-sample/.repl/scio_sample.repl.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scio-sample/scio_sample.scio_sample-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scio-sample/scio_sample.scio_sample-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scio-sample/scio_sample.test.iml" filepath="$PROJECT_DIR$/.idea/modules/scio-sample/scio_sample.test.iml" />
+    </modules>
+  </component>
+</project>
