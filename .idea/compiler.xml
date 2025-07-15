@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="scio_sample.main" target="8" />
+      <module name="scio_sample.repl.main" target="8" />
+      <module name="scio_sample.repl.test" target="8" />
+      <module name="scio_sample.test" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

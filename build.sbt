@@ -3,7 +3,7 @@ import Keys._
 import com.here.bom.Bom
 
 // see https://github.com/spotify/scio/blob/v0.14.9/build.sbt
-val scioVersion = "0.14.17"
+val scioVersion = "0.14.18"
 val beamVersion = "2.66.0"
 
 val guavaVersion = "33.1.0-jre"
@@ -66,14 +66,16 @@ lazy val root: Project = project
       "com.spotify" %% "scio-jdbc" % scioVersion,
       "com.spotify" %% "scio-parquet" % scioVersion,
       "com.spotify" %% "scio-google-cloud-platform" % scioVersion,
+      "com.spotify" %% "scio-test" % scioVersion % Test,
 
       "org.slf4j" % "slf4j-api" % slf4jVersion,
-      "org.apache.beam" % "beam-runners-direct-java" % beamVersion % Test,
-      "com.spotify" %% "scio-test" % scioVersion % Test,
       "org.slf4j" % "slf4j-simple" % slf4jVersion % Test,
-      "org.apache.beam" % "beam-sdks-java-io-google-cloud-platform" % "2.66.0",
+
+      "org.apache.beam" % "beam-runners-direct-java" % beamVersion,
+      "org.apache.beam" % "beam-sdks-java-io-google-cloud-platform" % beamVersion,
+      "org.apache.beam" % "beam-runners-google-cloud-dataflow-java" % beamVersion,
+
       "mysql" % "mysql-connector-java" % "8.0.33",
-      "org.apache.beam" % "beam-runners-google-cloud-dataflow-java" % "2.66.0",
     ),
   )
 
