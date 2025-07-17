@@ -20,8 +20,11 @@ object JoinSample {
     println(sc.options)
 
     //val input = args.getOrElse("input", "gs://rikitoku-sandbox/input/test.csv")
-    val leadsCsv     = "gs://rikitoku-sandbox/input/leads/leads-10000000.csv" // args.getOrElse("input", "gs://rikitoku-sandbox/input/leads/*.csv")
-    val customersCsv = "gs://rikitoku-sandbox/input/customers/customers-100000.csv"
+    //val leadsCsv     = "gs://rikitoku-sandbox/input/leads/leads-10000000.csv" // args.getOrElse("input", "gs://rikitoku-sandbox/input/leads/*.csv")
+    //val customersCsv = "gs://rikitoku-sandbox/input/customers/customers-100000.csv"
+    
+    val leadsCsv     = "gs://rikitoku-sandbox/input/leads/*.csv" // args.getOrElse("input", "gs://rikitoku-sandbox/input/leads/*.csv")
+    val customersCsv = "gs://rikitoku-sandbox/input/customers/*.csv"
     
     val output = args.getOrElse("output", "gs://rikitoku-sandbox/output/joined")
 
